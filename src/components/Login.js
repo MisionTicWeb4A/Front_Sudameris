@@ -6,20 +6,20 @@ function Login(){
 
         <div>
 
-            <form class="formulario" method="POST" action="validar_usuario">
+            <form className="formulario" method="POST" action="validar_usuario">
                 
-                <label for="correo">Correo</label>
-                <input type="text" name="correo" id="correo">
-                </input>
+                <label for="correo" className="form-label">Correo</label>
+                <input type="text" name="correo" id="correo" className="form-control"/>
                 
-                <br/>
-                
-                <label for="contraseña">Contraseña</label>
-                <input type="password" name="contraseña" id="contraseña"></input>
                 
                 <br/>
                 
-                <input type="submit">Entrar</input>
+                <label for="contraseña" className="form-label">Contraseña</label>
+                <input type="password" name="contraseña" id="contraseña" className="form-control"/>
+                
+                <br/>
+                
+                <input type="submit" name="Entrar" className="btn btn-primary"/>
             </form>
 
 

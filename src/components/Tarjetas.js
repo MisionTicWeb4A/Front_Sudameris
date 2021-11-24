@@ -14,8 +14,8 @@ function Tarjetas(){
             <div className="card">
                 <img src="" className="card-img-top" alt="..."/>
                 <div className="card-body">
-                <h5 className="card-title">Hombre</h5>
-                <p className="card-text">Encuentra todo lo relacionado a los Hombres aquí.</p>
+                <h5 className="card-title">Cuentas Fiduciarias</h5>
+                <p className="card-text">Crea una o varias cuentas fiduciarias para mantener tus ahorros.</p>
                 <a href="none" className="btn btn-primary">Ver Más</a>
                 </div>
             </div>
@@ -27,8 +27,8 @@ function Tarjetas(){
             <div className="card">
                 <img src="" className="card-img-top" alt="..."/>
                 <div className="card-body">
-                <h5 className="card-title">Mujeres</h5>
-                <p className="card-text">Encuentra todo lo relacionado a las Mujeres aquí.</p>
+                <h5 className="card-title">Crear Cuenta</h5>
+                <p className="card-text">Solicita tu creacion de cuenta Aqui.</p>
                 <a href="none" className="btn btn-primary">Ver Más</a>
                 </div>
             </div>
@@ -40,8 +40,8 @@ function Tarjetas(){
             <div className="card">
                 <img src="" className="card-img-top" alt="  "/>
                 <div className="card-body">
-                <h5 className="card-title">Tecnologia</h5>
-                <p className="card-text">Encuentra todo lo relacionado con la Tecnologia aquí.</p>
+                <h5 className="card-title">Extractos en Linea</h5>
+                <p className="card-text">Podras solicitar Extractos de cuentas desde la misma aplicacion.</p>
                 <a href="none" className="btn btn-primary">Ver Más</a>
                 </div>
             </div>
