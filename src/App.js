@@ -14,10 +14,6 @@ function App() {
       <NavBar/>
       <br/>
       <Banner />
-      <br/>
-      <Login />
-      <br/>
-      <Tarjetas />
       <pre>
 
 

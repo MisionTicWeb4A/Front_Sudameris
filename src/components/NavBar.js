@@ -9,7 +9,7 @@ function NavBar() {
         
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
             <div class="container-fluid">
-              <img class="logo" src="./icono.png" alt="logo"/> <a class="navbar-brand" href="{{url_for('index')}}">Sudameris</a>
+              <img class="logo" src="./icono.png" alt="logo"/> <a class="navbar-brand" href="{{url_for('index')}}"> </a>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                   <li class="nav-item">
