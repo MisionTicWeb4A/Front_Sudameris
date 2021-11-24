@@ -1,0 +1,136 @@
+
+.formulario{
+
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    width:400px;
+    height:auto;
+    background-color: white;
+    padding: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px;
+    display: flexbox;
+    z-index: -1;
+}
+
+
+
+body {
+    padding-top: 5%;
+    z-index: -1;
+    background-color: #e4ebe7;
+}
+
+.logo{
+    width:40px;
+    height:40px;
+
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    box-shadow: 0px 0px 10px black;
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0px;
+}
+
+.navbar-nav.ml-auto{
+
+    padding-left:380px;
+}
+
+.dropdown-menu.show{
+
+    z-index: 1;
+}
+.carousel.slide{
+
+    z-index: -1;
+}
+
+
+footer{
+
+    margin-bottom: 0px;
+}
+
+.fab.fa-instagram{
+    padding-right: 5px;
+}
+
+.fab.fa-facebook-f{
+
+    padding-right: 5px;
+}
+
+
+.contenedor{
+
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: repeat(7, 200fr);
+    grid-template-rows: repeat(1,100%);
+    padding: 20px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
+
+.contenedor2{
+
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: repeat(4, 200fr);
+    grid-template-rows: repeat(5,200fr);
+    padding: 20px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
+
+.contenedor2 img{
+
+    height:130px;
+    width:130px;
+}
+
+.contenedor2 div{
+
+    align-content: initial;
+    text-align: left;
+}
+
+.contenedor2 p{
+
+    font-family: cursive;
+    font-style: normal;
+    font-size: larger;
+}
+
+
+.card{
+    
+    width: 300px;
+    position: relative;
+    margin: 8px;
+    height:400px;
+    transition: all 0.6s ease;
+    
+}
+
+.card:hover{
+
+    box-shadow: 0px 5px 8px 0px black;
+    transform: translate(0,-8px);
+}
