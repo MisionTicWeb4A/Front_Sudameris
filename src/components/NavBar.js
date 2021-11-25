@@ -43,7 +43,7 @@ function NavBar() {
                         Usuarios
                       </a>
                       <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a className="dropdown-item" href="Login"> Iniciar Sesion</a></li>
+                        <li><a className="dropdown-item" href="{Login}"> Iniciar Sesion</a></li>
                         <li><a className="dropdown-item" href="{}">Registrarse</a></li>                       
                       </ul>
                     </li>
