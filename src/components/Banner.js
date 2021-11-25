@@ -1,11 +1,11 @@
 import React from 'react'
-
+import '../style.css'
 
 
 function Banner(){
 
     return(
-        <div>
+        <div className="banner">
             <div id="BannerUser1" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
                 

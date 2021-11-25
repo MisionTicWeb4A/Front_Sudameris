@@ -2,8 +2,8 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import Banner from './components/Banner'
-import Tarjetas from './components/Tarjetas';
-import Login from './components/Login'
+//import Tarjetas from './components/Tarjetas';
+//import Login from './components/Login'
 
 
 function App() {
