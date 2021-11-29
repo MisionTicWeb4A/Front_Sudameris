@@ -13,22 +13,22 @@ function NavBar() {
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                      <a className="nav-link" aria-current="page" href="{}">Home</a>
+                      <link to="../public/index.html" className="nav-link">Home</link>
                   </li>
                   <li className="nav-item">
-                      <a className="nav-link" href="{}">Cuenta</a>
+                      <link to="" className="nav-link">Cuenta</link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="{}">Extractos</a>
+                    <link to="" className="nav-link">Extractos</link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="{}">Transferencias</a>
+                    <link to="" className="nav-link">Transferencias</link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="{}">Cancelacion</a>
+                    <link to="" className="nav-link">Cancelacion</link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="{}">PQRs</a>
+                    <link to="" className="nav-link">PQRs</link>
                   </li>
                   
                   <div className="navbar-nav ml-auto">
@@ -43,8 +43,8 @@ function NavBar() {
                         Usuarios
                       </a>
                       <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a className="dropdown-item" href="{Login}"> Iniciar Sesion</a></li>
-                        <li><a className="dropdown-item" href="{}">Registrarse</a></li>                       
+                        <li><link to="./Login" className="dropdown-item" > Iniciar Sesion</link></li>
+                        <li><link to="./Signin" className="dropdown-item">Registrarse</link></li>                       
                       </ul>
                     </li>
                   </div>
