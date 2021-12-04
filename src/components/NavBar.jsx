@@ -1,60 +1,56 @@
-import React from 'react'
-import '../style.css'
+import React from 'react';
+import '../style.css';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import { NavDropdown, Nav , NavItem, NavLink} from 'react-bootstrap';
 
 
-function NavBar() {
+const MenuBar = function ({onOptionClicked}) {
 
-  
     return(
         
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary" >
-            <div className="container-fluid">
+        <Navbar className="BarraNavegacion" bg="primary" variant="dark" expand="lg" >
+            <Container fluid>
               <img className="logo" src="./icono.png" alt="logo"/> <a className="navbar-brand" href="{{url_for('index')}}"> </a>
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                      <link to="../public/index.html" className="nav-link">Home</link>
-                  </li>
-                  <li className="nav-item">
-                      <link to="" className="nav-link">Cuenta</link>
-                  </li>
-                  <li className="nav-item">
-                    <link to="" className="nav-link">Extractos</link>
-                  </li>
-                  <li className="nav-item">
-                    <link to="" className="nav-link">Transferencias</link>
-                  </li>
-                  <li className="nav-item">
-                    <link to="" className="nav-link">Cancelacion</link>
-                  </li>
-                  <li className="nav-item">
-                    <link to="" className="nav-link">PQRs</link>
-                  </li>
-                  
-                  <div className="navbar-nav ml-auto">
-                  <div className="row"/>
-                  <div className="row"/>
-                  <div className="row"/>
-                  <div className="row"/>
-                    <li className="nav-item dropdown ">
+              <Navbar.Collapse>
+                <Nav className="navbar-nav">
+                    <NavItem >
+                      <NavLink href="#Login" name="login" onClick={onOptionClicked}>Home</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="#Login" name="login" onClick={onOptionClicked}>Cuenta</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="#Login" name="login" onClick={onOptionClicked}>Extractos</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="#Login" name="login" onClick={onOptionClicked}>Transferencias</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="#Login" name="login" onClick={onOptionClicked}>Cancelacion</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="#Login" name="login" onClick={onOptionClicked}>PQRs</NavLink>
+                    </NavItem>
+                    
+                    <NavDropdown align="ml-auto" id="basic-nav-dropdown">
                       
-                      <a className="nav-link dropdown-toggle" href="none" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="" alt="" />
-                        Usuarios
-                      </a>
-                      <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><link to="./Login" className="dropdown-item" > Iniciar Sesion</link></li>
-                        <li><link to="./Signin" className="dropdown-item">Registrarse</link></li>                       
-                      </ul>
-                    </li>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </nav>
+                        <Nav className="dropdown-toggle" href="none" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Usuarios
+                          
+                          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <NavDropdown.Item href="#Login" name="login" onClick={onOptionClicked}> Iniciar Sesion</NavDropdown.Item>
+                            <NavDropdown.Item href="#Signin" name="signin" onClick={onOptionClicked}>Registrarse</NavDropdown.Item>                      
+                          </ul>
+                        </Nav>
+                    </NavDropdown>
+                  </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
 
     );
 
 }
 
-export default NavBar;
+export default MenuBar;
