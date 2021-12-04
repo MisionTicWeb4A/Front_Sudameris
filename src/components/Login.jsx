@@ -11,13 +11,13 @@ function Login(){
             <form className="formulario" method="POST" action="validar_usuario">
                 
                 <label for="correo" className="form-label">Correo</label>
-                <input type="text" name="correo" id="correo" className="form-control"/>
+                <input type="text" name="correo" id="correo" className="form-control" required/>
                 
                 
                 <br/>
                 
                 <label for="contraseña" className="form-label">Contraseña</label>
-                <input type="password" name="contraseña" id="contraseña" className="form-control"/>
+                <input type="password" name="contraseña" id="contraseña" className="form-control" required/>
                 
                 <br/>
                 

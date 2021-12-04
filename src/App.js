@@ -11,15 +11,15 @@ import Container from 'react-bootstrap/Container';
 
 function App() {
 
-  const [ compDinamico, setCompDinamico ] = useState(<Banner />);
+  const [ compDinamico, setCompDinamico ] = useState();
 
   const onOptionClicked = function (evt) {
     evt.preventDefault();
-    if (evt.target.name==="login") {
-      setCompDinamico(<Login/>);
+    if (evt.target.name==="home") {
+      setCompDinamico('#');
     }
     else {
-      if (evt.target.name==="comp2") { setCompDinamico(<Login />); }
+      if (evt.target.name==="login") { setCompDinamico(<Login />); }
       else { 
         if (evt.target.name==="signin") {setCompDinamico(<Signin />);}
         else {
@@ -66,24 +66,15 @@ function App() {
 
                 <section className="d-flex justify-content-center justify-content-lg-between">
                   
-                  <div>
-                    <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-                      <img className="fab fa-instagram" src="" alt=""/>
-                    </a>
-                    <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                      <img className="fab fa-facebook-f" src="" alt=""/>
-                    </a>
-                    <a href="https://www.whatsapp.com" target="_blank" rel="noreferrer">
-                      <img className="fab fa-whatsapp" src="" alt=""/>
-                    </a>
-                  </div>
+                <h6 className="text-uppercase fw-bold mb-4">
+                  Contactenos.
+                </h6>
+                
+                <img src="./mail.png" alt="correo" className="mx-auto mb-md-0 mb-4"/>
+                
                   
                 </section>
-                <br/>
-                
-                <h6 className="text-uppercase fw-bold mb-4">
-                  Contactenos
-                </h6>
+                <br/>               
                                                 
               </div>
               

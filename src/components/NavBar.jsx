@@ -11,38 +11,35 @@ const MenuBar = function ({onOptionClicked}) {
         
         <Navbar className="BarraNavegacion" bg="primary" variant="dark" expand="lg" >
             <Container fluid>
-              <img className="logo" src="./icono.png" alt="logo"/> <a className="navbar-brand" href="{{url_for('index')}}"> </a>
+              <img className="logo" src="./icono.png" alt="logo" name="home" onClick={onOptionClicked}/>
               <Navbar.Collapse>
                 <Nav className="navbar-nav">
                     <NavItem >
-                      <NavLink href="#Login" name="login" onClick={onOptionClicked}>Home</NavLink>
+                      <NavLink href="#home" name="login" onClick={onOptionClicked}>Home</NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#Login" name="login" onClick={onOptionClicked}>Cuenta</NavLink>
+                      <NavLink href="#Cuenta" name="Cuenta" onClick={onOptionClicked}>Cuenta</NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#Login" name="login" onClick={onOptionClicked}>Extractos</NavLink>
+                      <NavLink href="#Extractos" name="Extractos" onClick={onOptionClicked}>Extractos</NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#Login" name="login" onClick={onOptionClicked}>Transferencias</NavLink>
+                      <NavLink href="#Transferencias" name="Transferencias" onClick={onOptionClicked}>Transferencias</NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#Login" name="login" onClick={onOptionClicked}>Cancelacion</NavLink>
+                      <NavLink href="#Cancelacion" name="Cancelacion" onClick={onOptionClicked}>Cancelacion</NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#Login" name="login" onClick={onOptionClicked}>PQRs</NavLink>
+                      <NavLink href="#pqrs" name="pqrs" onClick={onOptionClicked}>PQRs</NavLink>
                     </NavItem>
                     
-                    <NavDropdown align="ml-auto" id="basic-nav-dropdown">
-                      
-                        <Nav className="dropdown-toggle" href="none" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Usuarios
-                          
-                          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <NavDropdown.Item href="#Login" name="login" onClick={onOptionClicked}> Iniciar Sesion</NavDropdown.Item>
-                            <NavDropdown.Item href="#Signin" name="signin" onClick={onOptionClicked}>Registrarse</NavDropdown.Item>                      
-                          </ul>
-                        </Nav>
+                    <NavDropdown align="ml-auto" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <NavLink ClassName="dropdown-toggle">Usuarios</NavLink>                       
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a className="dropdown-item" href="none" onClick={onOptionClicked}>Login</a></li>
+                          <li><a className="dropdown-item" href="none" onClick={onOptionClicked}>Signin</a></li>
+                        </ul>
                     </NavDropdown>
                   </Nav>
               </Navbar.Collapse>
