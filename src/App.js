@@ -6,6 +6,7 @@ import Login from './components/Login';
 import Signin from './components/Signin';
 import './style.css';
 import Container from 'react-bootstrap/Container';
+import Extractos from './components/Extractos';
 
 
 
@@ -16,14 +17,17 @@ function App() {
   const onOptionClicked = function (evt) {
     evt.preventDefault();
     if (evt.target.name==="home") {
-      setCompDinamico('#');
+      setCompDinamico(<Banner />);
     }
     else {
-      if (evt.target.name==="login") { setCompDinamico(<Login />); }
+      if (evt.target.name==="Iniciar Sesion") { setCompDinamico(<Login />); }
       else { 
-        if (evt.target.name==="signin") {setCompDinamico(<Signin />);}
+        if (evt.target.name==="Registrarse") {setCompDinamico(<Signin />);}
         else {
-          setCompDinamico(<Banner />);
+          if (evt.target.name==="Extractos") {setCompDinamico(<Extractos />);} 
+          else {
+            setCompDinamico(<Banner />);
+          }
         }
       }
     }

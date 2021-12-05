@@ -33,13 +33,10 @@ const MenuBar = function ({onOptionClicked}) {
                       <NavLink href="#pqrs" name="pqrs" onClick={onOptionClicked}>PQRs</NavLink>
                     </NavItem>
                     
-                    <NavDropdown align="ml-auto" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <NavLink ClassName="dropdown-toggle">Usuarios</NavLink>                       
-                        
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a className="dropdown-item" href="none" onClick={onOptionClicked}>Login</a></li>
-                          <li><a className="dropdown-item" href="none" onClick={onOptionClicked}>Signin</a></li>
-                        </ul>
+                    <NavDropdown title="Usuarios" align="ml-auto" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <NavDropdown.Item href="#" name="Iniciar Sesion" onClick={onOptionClicked}>Iniciar Sesion</NavDropdown.Item>
+                      <NavDropdown.Item href="#" name="Registrarse" onClick={onOptionClicked}>Registrarse</NavDropdown.Item>
+                    
                     </NavDropdown>
                   </Nav>
               </Navbar.Collapse>
