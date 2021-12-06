@@ -71,7 +71,7 @@ function App() {
                   Contactenos.
                 </h6>
                 
-                <img src="./mail.png" alt="correo" className="mx-auto mb-md-0 mb-4"/>
+                <img src="./mail.png" alt="correo" className="col-md-3"/>
                 
                   
                 </section>
