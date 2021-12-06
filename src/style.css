@@ -117,10 +117,21 @@ footer{
 
 .banner{
     z-index: -1;
-    margin-top: 7%;
+    margin-top: 8%;
+    position: relative;
+    padding: 3%;
 }
 
 .dropdown-menu{
 
     right: 3%;
+}
+
+
+.contenido{
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    width: 80%;
+    height: auto;
 }

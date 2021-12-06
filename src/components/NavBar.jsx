@@ -11,11 +11,11 @@ const MenuBar = function ({onOptionClicked}) {
         
         <Navbar className="BarraNavegacion" bg="primary" variant="dark" expand="lg" >
             <Container fluid>
-              <img className="logo" src="./icono.png" alt="logo" name="home" onClick={onOptionClicked}/>
+              <NavLink  href="#home" name="home" onClick={onOptionClicked}><img className="logo" src="./icono.png" alt="logo"/></NavLink>
               <Navbar.Collapse>
                 <Nav className="navbar-nav">
                     <NavItem >
-                      <NavLink href="#home" name="login" onClick={onOptionClicked}>Home</NavLink>
+                      <NavLink href="#home" name="home" onClick={onOptionClicked}>Home</NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink href="#Cuenta" name="Cuenta" onClick={onOptionClicked}>Cuenta</NavLink>
@@ -34,8 +34,8 @@ const MenuBar = function ({onOptionClicked}) {
                     </NavItem>
                     
                     <NavDropdown title="Usuarios" align="ml-auto" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <NavDropdown.Item href="#" name="Iniciar Sesion" onClick={onOptionClicked}>Iniciar Sesion</NavDropdown.Item>
-                      <NavDropdown.Item href="#" name="Registrarse" onClick={onOptionClicked}>Registrarse</NavDropdown.Item>
+                      <NavDropdown.Item href="#IniciarSesion" name="Iniciar Sesion" onClick={onOptionClicked}>Iniciar Sesion</NavDropdown.Item>
+                      <NavDropdown.Item href="#Registrarse" name="Registrarse" onClick={onOptionClicked}>Registrarse</NavDropdown.Item>
                     
                     </NavDropdown>
                   </Nav>

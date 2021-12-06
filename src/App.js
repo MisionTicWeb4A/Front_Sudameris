@@ -5,14 +5,14 @@ import Banner from './components/Banner';
 import Login from './components/Login';
 import Signin from './components/Signin';
 import './style.css';
-import Container from 'react-bootstrap/Container';
+//import Container from 'react-bootstrap/Container';
 import Extractos from './components/Extractos';
 
 
 
 function App() {
 
-  const [ compDinamico, setCompDinamico ] = useState();
+  const [ compDinamico, setCompDinamico ] = useState(<Banner />);
 
   const onOptionClicked = function (evt) {
     evt.preventDefault();
@@ -34,14 +34,11 @@ function App() {
   }
 
 
-
   return (
-    
+      
       <Fragment>
         <NavBar onOptionClicked={onOptionClicked} />
-          <Container>
-            {compDinamico}
-          </Container>      
+          {compDinamico}
         <pre>
 
 
