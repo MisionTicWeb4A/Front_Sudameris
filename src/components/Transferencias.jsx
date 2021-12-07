@@ -1,4 +1,5 @@
 import React from 'react'
+import '../style.css'
 
 function Transferencias(){
     return(
@@ -42,4 +43,5 @@ function Transferencias(){
         </form>
     );
 
-};
+}
+export default Transferencias;

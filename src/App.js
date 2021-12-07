@@ -7,6 +7,9 @@ import Signin from './components/Signin';
 import './style.css';
 //import Container from 'react-bootstrap/Container';
 import Extractos from './components/Extractos';
+import Transferencias from './components/Transferencias';
+import PQRs from './components/PQRs';
+
 
 
 
@@ -26,7 +29,13 @@ function App() {
         else {
           if (evt.target.name==="Extractos") {setCompDinamico(<Extractos />);} 
           else {
-            setCompDinamico(<Banner />);
+            if (evt.target.name==="Transferencias") {setCompDinamico(<Transferencias />);} 
+            else {
+              if (evt.target.name==="PQRs") {setCompDinamico(<PQRs />);} 
+              else { 
+                  setCompDinamico(<Banner />);
+              }
+            }
           }
         }
       }

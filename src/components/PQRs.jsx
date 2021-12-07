@@ -1,4 +1,5 @@
 import React from 'react'
+import '../style.css'
 
 function PQRs() {
     return (
@@ -37,4 +38,5 @@ function PQRs() {
         </form>
     );
 
-};
+}
+export default PQRs;
