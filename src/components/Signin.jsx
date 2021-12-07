@@ -25,26 +25,15 @@ function Signin(){
             
             <br/>
             
-            <label for="primer_nombre" className="form-label">Primer Nombre</label>
+            <label for="primer_nombre" className="form-label">Nombre Completo</label>
             <input id="primer_nombre" name="primer_nombre" type="text" className="form-control" required/>
             
             
             <br/>
             
-            <label for="segundo_nombre" className="form-label">Segundo Nombre</label>
-            <input id="segundo_nombre" name="segundo_nombre" type="text" className="form-control" required/>
-            
-            <br/>
-            
-            <label for="primer_apellido" className="form-label">Primer Apellido</label>
+            <label for="primer_apellido" className="form-label">Apellidos Apellido</label>
             <input id="primer_apellido" name="primer_apellido" type="text" className="form-control" required/>
-            
-            
-            <br/>
-            
-            <label for="segundo_apellido" className="form-label">Segundo Apellido</label>
-            <input id="segundo_apellido" name="segundo_apellido" type="text" className="form-control" required/>
-            
+                   
             
             <br/>
             
