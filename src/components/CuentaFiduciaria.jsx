@@ -8,7 +8,7 @@ function AddFiduciaria(){
 
         <div>
 
-            <form class="formulario" action="{}" method="POST">
+            <form class="formulario" action="none" method="POST">
             
             
             <br/>

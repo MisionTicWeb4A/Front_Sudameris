@@ -11,11 +11,12 @@ function Signin(){
             <form class="formulario" action="registrar_usuario" method="POST">
             
             
-            <br/>
-            
-            <label for="tipo" className="form-label">Tipo</label>
-            <input id="tipo" name="tipo" type="text" className="form-control" required/>
-            
+            <label for ="Tipo">Tipo Documento</label>
+            <select id="Tipo" className="form-select" required>
+                <option value=""></option>
+                <option value="CC">CC</option>
+                <option value="NIT">NIT</option>
+            </select>
             <br/>
         
             <label for="documento" className="form-label">Documento</label>
