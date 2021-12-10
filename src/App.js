@@ -6,11 +6,24 @@ import Login from './components/Login';
 import Signin from './components/Signin';
 import './style.css';
 import Extractos from './components/Extractos';
+<<<<<<< HEAD
 import Pqrs from './components/PQRs';
+=======
+import Transferencias from './components/Transferencias';
+import PQRs from './components/PQRs';
+
+>>>>>>> 27231623f3c261ec014d794d9465f07a44c24698
 
 
 
 function App() {
+
+  const vec_api = [{id:1, fecha: '2020-01-01', detalle:'Retiro ATH', monto: '100.00'},
+    {id:2, fecha: '2020-01-02', detalle:'Compra Alkosto', monto: '200.00'},
+    {id:3, fecha: '2020-01-03', detalle:'Compra SAO 92', monto: '300.00'},
+    {id:4, fecha: '2020-01-04', detalle:'Transferencia', monto: '400.00'},
+    {id:5, fecha: '2020-01-05', detalle:'Pago cuota', monto: '500.00'}
+  ];
 
   const [ compDinamico, setCompDinamico ] = useState(<Banner />);
 
@@ -24,11 +37,20 @@ function App() {
       else { 
         if (evt.target.name==="Registrarse") {setCompDinamico(<Signin />);}
         else {
-          if (evt.target.name==="Extractos") {setCompDinamico(<Extractos />);} 
+          if (evt.target.name==="Extractos") {setCompDinamico(<Extractos datos= { vec_api } />);} 
           else {
+<<<<<<< HEAD
             if (evt.target.name==="pqrs") {setCompDinamico(<Pqrs />);} 
             else {
               setCompDinamico(<Banner />);
+=======
+            if (evt.target.name==="Transferencias") {setCompDinamico(<Transferencias />);} 
+            else {
+              if (evt.target.name==="PQRs") {setCompDinamico(<PQRs />);} 
+              else { 
+                  setCompDinamico(<Banner />);
+              }
+>>>>>>> 27231623f3c261ec014d794d9465f07a44c24698
             }
           }
         }
