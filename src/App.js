@@ -6,13 +6,9 @@ import Login from './components/Login';
 import Signin from './components/Signin';
 import './style.css';
 import Extractos from './components/Extractos';
-<<<<<<< HEAD
-import Pqrs from './components/PQRs';
-=======
 import Transferencias from './components/Transferencias';
 import PQRs from './components/PQRs';
 
->>>>>>> 27231623f3c261ec014d794d9465f07a44c24698
 
 
 
@@ -39,18 +35,12 @@ function App() {
         else {
           if (evt.target.name==="Extractos") {setCompDinamico(<Extractos datos= { vec_api } />);} 
           else {
-<<<<<<< HEAD
-            if (evt.target.name==="pqrs") {setCompDinamico(<Pqrs />);} 
-            else {
-              setCompDinamico(<Banner />);
-=======
             if (evt.target.name==="Transferencias") {setCompDinamico(<Transferencias />);} 
             else {
-              if (evt.target.name==="PQRs") {setCompDinamico(<PQRs />);} 
+              if (evt.target.name==="pqrs") {setCompDinamico(<PQRs />);} 
               else { 
                   setCompDinamico(<Banner />);
               }
->>>>>>> 27231623f3c261ec014d794d9465f07a44c24698
             }
           }
         }
