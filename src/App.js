@@ -5,8 +5,8 @@ import Banner from './components/Banner';
 import Login from './components/Login';
 import Signin from './components/Signin';
 import './style.css';
-//import Container from 'react-bootstrap/Container';
 import Extractos from './components/Extractos';
+import Pqrs from './components/PQRs';
 
 
 
@@ -26,7 +26,10 @@ function App() {
         else {
           if (evt.target.name==="Extractos") {setCompDinamico(<Extractos />);} 
           else {
-            setCompDinamico(<Banner />);
+            if (evt.target.name==="pqrs") {setCompDinamico(<Pqrs />);} 
+            else {
+              setCompDinamico(<Banner />);
+            }
           }
         }
       }

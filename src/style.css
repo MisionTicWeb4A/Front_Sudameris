@@ -136,3 +136,20 @@ footer{
     width: 80%;
     height: auto;
 }
+
+
+.mx-auto{
+    max-width: 35em;
+    color: #adadad;
+    margin-top: 10%;
+}
+
+.mx-auto.mb-3{
+    text-align: center;
+    color: #2d7dd2; 
+}
+
+.input-group.mb-4{
+
+    color: #adadad;
+}
