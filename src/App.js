@@ -8,7 +8,7 @@ import './style.css';
 import Extractos from './components/Extractos';
 import Transferencias from './components/Transferencias';
 import PQRs from './components/PQRs';
-
+import CuentaFiduciaria from './components/CuentaFiduciaria';
 
 
 
@@ -25,27 +25,28 @@ function App() {
 
   const onOptionClicked = function (evt) {
     evt.preventDefault();
-    if (evt.target.name==="home") {
-      setCompDinamico(<Banner />);
-    }
+    if (evt.target.name==="home") { setCompDinamico(<Banner />);}
     else {
       if (evt.target.name==="Iniciar Sesion") { setCompDinamico(<Login />); }
-      else { 
-        if (evt.target.name==="Registrarse") {setCompDinamico(<Signin />);}
-        else {
-          if (evt.target.name==="Extractos") {setCompDinamico(<Extractos datos= { vec_api } />);} 
+      else {
+        if (evt.target.name==="Cuenta") {setCompDinamico(<CuentaFiduciaria />);}
+        else { 
+          if (evt.target.name==="Registrarse") {setCompDinamico(<Signin />);}
           else {
-            if (evt.target.name==="Transferencias") {setCompDinamico(<Transferencias />);} 
+            if (evt.target.name==="Extractos") {setCompDinamico(<Extractos datos= { vec_api } />);} 
             else {
-              if (evt.target.name==="pqrs") {setCompDinamico(<PQRs />);} 
-              else { 
-                  setCompDinamico(<Banner />);
-              }
+              if (evt.target.name==="Transferencias") {setCompDinamico(<Transferencias />);} 
+              else {
+                if (evt.target.name==="pqrs") {setCompDinamico(<PQRs />);} 
+                else { 
+                    setCompDinamico(<Banner />);
+                }
             }
           }
         }
       }
     }
+  }
   }
 
 

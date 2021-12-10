@@ -11,7 +11,7 @@ function PQRs() {
                 <div className="mx-auto mb-3">
                     <h1> Peticiones - Quejas - Reclamos </h1>
                 </div>
-                <label for="exampleFormControlInput1" className="form-label">Registre la siguiente solicitud</label>
+                <label for="quejas" className="form-label">Registre la siguiente solicitud</label>
 
                 <div className="input-group mb-4">
                     <select className="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
@@ -23,7 +23,7 @@ function PQRs() {
                 </div>
 
                 <div className="mb-5">
-                    <label for="exampleFormControlTextarea1" className="form-label">Mensaje (Opcional)</label>
+                    <label for="quejas" className="form-label">Mensaje (Opcional)</label>
                     <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
 

@@ -117,9 +117,9 @@ footer{
 
 .banner{
     z-index: -1;
-    margin-top: 8%;
+    margin-top: 3%;
     position: relative;
-    padding: 3%;
+    padding: 2%;
 }
 
 .dropdown-menu{
@@ -141,7 +141,7 @@ footer{
 .mx-auto{
     max-width: 35em;
     color: #adadad;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .mx-auto.mb-3{

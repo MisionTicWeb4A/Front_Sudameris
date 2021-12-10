@@ -2,75 +2,45 @@ import React from 'react'
 import '../style.css'
 
 
-function AddFiduciaria(){
+function CuentaFiduciaria(){
 
     return (
 
         <div>
 
-            <form class="formulario" action="none" method="POST">
-            
-            
-            <br/>
-            
-            <label for="tipo" className="form-label">Tipo</label>
-            <input id="tipo" name="tipo" type="text" className="form-control"/>
-            
-            <br/>
-        
-            <label for="documento" className="form-label">Documento</label>
-            <input id="documento" name="documento" type="text" className="form-control"/>
-            
-            
-            <br/>
-            
-            <label for="primer_nombre" className="form-label">Primer Nombre</label>
-            <input id="primer_nombre" name="primer_nombre" type="text" className="form-control"/>
-            
-            
-            <br/>
-            
-            <label for="segundo_nombre" className="form-label">Segundo Nombre</label>
-            <input id="segundo_nombre" name="segundo_nombre" type="text" className="form-control"/>
-            
-            <br/>
-            
-            <label for="primer_apellido" className="form-label">Primer Apellido</label>
-            <input id="primer_apellido" name="primer_apellido" type="text" className="form-control"/>
-            
-            
-            <br/>
-            
-            <label for="segundo_apellido" className="form-label">Segundo Apellido</label>
-            <input id="segundo_apellido" name="segundo_apellido" type="text" className="form-control"/>
-            
-            
-            <br/>
-            
-            <label for="fecha_nacimiento" className="form-label">Fecha Nacimiento</label>
-            <input id="fecha_nacimiento" name="fecha_nacimiento" type="text" className="form-control"/>
-            
-            
-            <br/>
-            
-            <label for="correo" className="form-label">Correo</label>
-            <input id="correo" name="correo" type="text" className="form-control"/>
-            
-            
-            <br/>
-            
-            <label for="contraseña" className="form-label">Contraseña</label>
-            <input id="contraseña" name="contraseña" type="password" className="form-control"/>
-                        
-            <br/>
-            
-            <input type="submit" name="Registrar" className="btn btn-primary"/>
-            
-            
-            
-        </form>
+            <form className="mx-auto" action="">
 
+                <div className="mx-auto mb-3">
+                    <h1> Cuenta Fiduciaria </h1>
+                </div>
+                <label for="quejas" className="form-label">Registre la siguiente solicitud</label>
 
+                <div className="input-group mb-4">
+                    <select className="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <option selected>Tipo de Solicitud ... </option>
+                        <option value="1"> 01 - Apertura de Cuenta </option>
+                        <option value="2"> 02 - Cierre de Cuenta </option>
+                        <option value="3"> 03 - Reactivar Cuenta </option>
+                    </select>
+                </div>
+
+                <div className="mb-5">
+                    <label for="quejas" className="form-label">Mensaje (Opcional)</label>
+                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <p>
+                    <a className="btn btn-primary mx-auto d-grid gap-2 col-6 mx-auto" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Confirmar Transacción
+                    </a>
+                </p>
+                <div className="collapse" id="collapseExample">
+                    <div className="card card-body">
+                        Se ha enviado correctamente, en los proximos 5 días habiles se dará respuesta a su solicitud.
+                    </div>
+                </div>
+            </form>
         </div>
 
 
@@ -79,4 +49,4 @@ function AddFiduciaria(){
 
 }
 
-export default AddFiduciaria;
+export default CuentaFiduciaria;
