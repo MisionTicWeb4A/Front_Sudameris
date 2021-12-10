@@ -25,6 +25,11 @@ function CuentaFiduciaria(){
                 </div>
 
                 <div className="mb-5">
+                    <label for="quejas" className="form-label">Numero de Cuenta</label>
+                    <input type="number" className="form-control" id="exampleFormControlTextarea1" rows="3"></input>
+                </div>
+
+                <div className="mb-5">
                     <label for="quejas" className="form-label">Mensaje (Opcional)</label>
                     <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
